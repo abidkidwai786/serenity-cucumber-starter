@@ -19,6 +19,11 @@
     <dependencies>
         <dependency>
             <groupId>net.serenity-bdd</groupId>
+            <artifactId>serenity-lambdatest</artifactId>
+            <version>${serenity.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>net.serenity-bdd</groupId>
             <artifactId>serenity-core</artifactId>
             <version>${serenity.version}</version>
             <scope>test</scope>
@@ -121,6 +126,23 @@
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>net.serenity-bdd.maven.plugins</groupId>
+                <artifactId>serenity-maven-plugin</artifactId>
+                <version>${serenity.maven.version}</version>
+                <configuration>
+                    <tags>${tags}</tags>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>serenity-reports</id>
+                        <phase>post-integration-test</phase>
+                        <goals>
+                            <goal>aggregate</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
             <plugin>
                 <groupId>net.serenity-bdd.maven.plugins</groupId>

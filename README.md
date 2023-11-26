@@ -277,3 +277,10 @@ For more information about Serenity BDD, you can read the [**Serenity BDD Book**
 * **[Byte-sized Serenity BDD](https://www.youtube.com/channel/UCav6-dPEUiLbnu-rgpy7_bw/featured)** - tips and tricks about Serenity BDD
 * For regular posts on agile test automation best practices, join the **[Agile Test Automation Secrets](https://www.linkedin.com/groups/8961597/)** groups on [LinkedIn](https://www.linkedin.com/groups/8961597/) and [Facebook](https://www.facebook.com/groups/agiletestautomation/)
 * [**Serenity BDD Blog**](https://johnfergusonsmart.com/category/serenity-bdd/) - regular articles about Serenity BDD
+
+
+Run command:-
+1) ./gradlew build -Denvironment=ios_safari (IOS SAFARI)
+2) ./gradlew build -Denvironment=android_chrome (Chrome Android)
+3) ./gradlew build -Denvironment=windows_11_chrome (Chrome Win11)
+4) ./gradlew build -Denvironment=mac_13_safari (Mac Safari)

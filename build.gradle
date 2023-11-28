@@ -21,13 +21,13 @@ apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: "net.serenity-bdd.serenity-gradle-plugin"
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
+sourceCompatibility = '11'
+targetCompatibility = '11'
 
 ext {
     slf4jVersion = '1.7.7'
-    serenityCoreVersion = '3.3.4'
-    serenityCucumberVersion = '3.3.4'
+    serenityCoreVersion = '4.0.1'
+    serenityCucumberVersion = '4.0.1'
     junitVersion = '4.13.1'
     assertJVersion = '3.23.1'
     logbackVersion = '1.2.10'
